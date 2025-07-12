@@ -1,93 +1,52 @@
-# Python Flask ReplAuth
+# STACKIT
 
-Using the ReplAuth with Flask is super easy! First we create a new Flask app: 
+A StackOverflow-style Q&A platform built with Flask, SQLite, and Jinja2. Users can ask questions, post answers, vote, mention others, and view notifications. Admins can manage users, delete questions, and ban accounts.
 
-<details>
-  <summary>Import Flask and create new Flask app</summary>
-
-```python
-from flask import Flask, render_template, request
-app = Flask('app')
-@app.route('/')
-```
-</details>
-
-And then we request the headers: 
-
-<details>
-  <summary>Requested Headers:</summary>
-
-```python
-def hello_world():
-    print(request.headers)
-    return render_template(
-        'index.html',
-        user_id=request.headers['X-Replit-User-Id'],
-        user_name=request.headers['X-Replit-User-Name'],
-        user_roles=request.headers['X-Replit-User-Roles'],
-        user_bio=request.headers['X-Replit-User-Bio'],
-        user_profile_image=request.headers['X-Replit-User-Profile-Image'],
-        user_teams=request.headers['X-Replit-User-Teams'],
-        user_url=request.headers['X-Replit-User-Url']
-    )
-```
-</details>
-
-In this code we've requested all the possible headers, which are these:
-
-<details>
-  <summary>All Replit Headers</summary>
-
-```python
-X-Replit-User-Bio
-X-Replit-User-Id
-X-Replit-User-Name
-X-Replit-User-Profile-Image
-X-Replit-User-Roles
-X-Replit-User-Teams
-X-Replit-User-Url
-```
-</details>
-
-Once we've requested all these headers, we can show the information we've got after the user has passed through the Auth. This info will be displayed on the console, but can also be displayed in a html file.
-
-We can show this by displaying the variable assigned to a header in a HTML tag (it can also be shown without a tag). If we wanted to show the username of the user we would put this:
-
-```html
-<h1>{{ user_name }}</h1>
-```
-
-And the output will be a heading (h1) with the username. 
-
-# ReplAuth FAQ 
-
-The question is in a quote and in italic and the answer is in a bullet point.
-
-<details>
-  <summary>ReplAuth FAQ</summary>
-  
-  > *How many ReplAuths are there?*
-  
-  - There are 2 repl auths!
- ---
-  > *Which ReplAuths are there?*
-  
-  - Node.js and Python Flask
 ---
-  > *Is there a Replit Documentation on ReplAuths?*
 
-  - Yes! You can find it in the [Replit Docs](https://docs.replit.com)
-</details>
+## 🚀 Live Demo
+🔗 [Click to View on Replit](https://replit.com/@tousifazimds/STACKIT)
 
-# Template
+---
 
-**Name**: Python Flask ReplAuth
+## 🧠 Features
 
-**Description**: Python Flask ReplAuth is easy and useful to use! What are you waiting for? Start using ReplAuth today!
+- ✅ User authentication (Sign Up / Login / Logout)
+- ✅ Ask and Answer questions
+- ✅ @Mentions and notification system
+- ✅ Voting system (+1/-1)
+- ✅ Admin dashboard to manage users/questions
+- ✅ Markdown/Quill-based editor
+- ✅ Image uploads
+- ✅ Clean UI (enhanced with custom styling)
 
-# Questions?
+---
 
-If you have any question please look at our support resources:
+## 🛠️ Tech Stack
 
-- [Replit Docs](https://docs.replit.com)
-- [Ask forum](https://ask.replit.com)
+- Flask (Python backend)
+- SQLite (Database)
+- Jinja2 Templates
+- Bootstrap / Custom CSS (Frontend)
+- Flask-Login, SQLAlchemy
+- Deployed on Replit
+
+---
+
+## 🧑‍💻 Team
+
+- Tousif Azim – AI/ML Developer  
+- Sayan Dutta – Backend & DB  
+- Shreejita Biswas – Integration & Communication  
+- Ranjan Chakraborty – Frontend
+
+---
+
+## 💻 How to Run Locally
+
+```bash
+git clone https://github.com/Tousif18/STACKIT.git
+cd STACKIT
+pip install -r requirements.txt
+python app.py
+
