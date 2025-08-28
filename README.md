@@ -40,7 +40,7 @@ poetry install
 # 3) run
 poetry run python main.py
 ```
-Option B — pip (if you insist)
+### Option B — pip (if you insist)
 ```
 # create & activate a venv, then:
 pip install -r requirements.txt
@@ -49,7 +49,7 @@ python main.py
 If using Option B, generate requirements.txt once via:
 poetry export -f requirements.txt -o requirements.txt --without-hashes
 
-Configuration
+### Configuration
 Create a .env file (not committed) for secrets:
 ```
 FLASK_SECRET_KEY=change-me
