@@ -1,3 +1,7 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
+
 # STACKIT
 
 A StackOverflow-style Q&A platform built with Flask + SQLite. Users can ask questions, answer, @mention, vote, and get notifications. Admins can manage users, delete questions, and ban accounts.
