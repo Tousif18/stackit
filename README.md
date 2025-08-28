@@ -3,7 +3,7 @@
 A StackOverflow-style Q&A platform built with Flask + SQLite. Users can ask questions, answer, @mention, vote, and get notifications. Admins can manage users, delete questions, and ban accounts.
 
 ## Live Demo
-- Replit: <ADD YOUR PUBLIC URL HERE>
+- Replit: https://f1decd1c-d349-49f8-86d2-caef1d6d3350-00-2awhbe1osuel9.pike.replit.dev/
 
 ## Features
 - Auth: sign up / login / logout
@@ -35,38 +35,38 @@ poetry install
 
 # 3) run
 poetry run python main.py
+```
 Option B — pip (if you insist)
-bash
-Copy code
+```
 # create & activate a venv, then:
 pip install -r requirements.txt
 python main.py
+```
 If using Option B, generate requirements.txt once via:
 poetry export -f requirements.txt -o requirements.txt --without-hashes
 
 Configuration
 Create a .env file (not committed) for secrets:
-
-ini
-Copy code
+```
 FLASK_SECRET_KEY=change-me
 DATABASE_URL=sqlite:///app.db
+```
 The app reads from environment variables; fallbacks exist for local dev.
 
 Screenshots
+
 Add 2–4 images or a short GIF here (ask, answer, admin ban, notifications).
 
 Roadmap
+
 Pagination & search
 
 Tags & user profiles
 
-Email / push notifications
+Email/push notifications
 
 Dockerfile & GitHub Actions
 
 License
-MIT
 
-yaml
-Copy code
+MIT
