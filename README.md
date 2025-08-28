@@ -53,20 +53,30 @@ DATABASE_URL=sqlite:///app.db
 ```
 The app reads from environment variables; fallbacks exist for local dev.
 
-Screenshots
+## Screenshots
 
-Add 2–4 images or a short GIF here (ask, answer, admin ban, notifications).
+### Ask a Question
+![Home Page](./assets/screenshot1.png)
 
-Roadmap
+### Answer a Question
+![Ask Question](./assets/screenshot2.png)
 
-Pagination & search
+### Admin Banning a User
+![Answer Question](./assets/screenshot3.png)
 
-Tags & user profiles
+### Notifications
+![Notifications](./assets/screenshot4.png)
 
-Email/push notifications
 
-Dockerfile & GitHub Actions
+## Roadmap
 
-License
+- **Search & Pagination** for easy navigation through questions
+- **User Profiles & Reputation**: track activity, ask/answer history, badges
+- **Tags System**: categorise questions and filter by topics
+- **Accept Answers & Voting Scoreboard**: highlight best solutions and contributions
+- **Notifications**: get notified on mentions, answers, and comments
+- **Docker + CI**: containerise the app and add automated testing via GitHub Actions
+
+##License
 
 MIT
