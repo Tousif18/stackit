@@ -47,8 +47,9 @@ pip install -r requirements.txt
 python main.py
 ```
 If using Option B, generate requirements.txt once via:
+```
 poetry export -f requirements.txt -o requirements.txt --without-hashes
-
+```
 ### Configuration
 Create a .env file (not committed) for secrets:
 ```
