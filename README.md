@@ -27,7 +27,7 @@ A StackOverflow-style Q&A platform built with Flask + SQLite. Users can ask ques
 
 ## Run Locally
 
-### Option A — Poetry (recommended)
+### Option A - Poetry (recommended)
 ```bash
 # 1) clone
 git clone https://github.com/Tousif18/stackit.git
@@ -40,7 +40,7 @@ poetry install
 # 3) run
 poetry run python main.py
 ```
-### Option B — pip (if you insist)
+### Option B - pip (if you insist)
 ```
 # create & activate a venv, then:
 pip install -r requirements.txt
