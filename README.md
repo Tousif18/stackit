@@ -55,13 +55,13 @@ The app reads from environment variables; fallbacks exist for local dev.
 
 ## Screenshots
 
-### Ask a Question
+### Home Page
 ![Home Page](./assets/screenshot1.png)
 
-### Answer a Question
+### Ask Question
 ![Ask Question](./assets/screenshot2.png)
 
-### Admin Banning a User
+### Answer Question
 ![Answer Question](./assets/screenshot3.png)
 
 ### Notifications
@@ -77,6 +77,6 @@ The app reads from environment variables; fallbacks exist for local dev.
 - **Notifications**: get notified on mentions, answers, and comments
 - **Docker + CI**: containerise the app and add automated testing via GitHub Actions
 
-##License
+## License
 
 MIT
